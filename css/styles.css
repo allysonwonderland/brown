@@ -8,7 +8,9 @@ body {
 
 header .header {
   text-align: center;
-  padding-top: 50px;
+  align-items: center;
+  position: relative;
+  padding: 20px;
   margin-top: 50px;
   background-size: cover;
   background-image: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(19, 97, 117, 0.73)), url("../img/header-image.jpg");
@@ -17,15 +19,18 @@ header .header {
   background-color: white;
   border-radius: 20px 20px 0 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-
-header h1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: calc(20px + 2vw);
-  text-shadow: 1px 1px 2px black; }
-
-header h2 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: calc(12px + 1vw); }
+  header .header .headertext {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    header .header .headertext h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: calc(20px + 2vw);
+      text-shadow: 1px 1px 2px black; }
+    header .header .headertext h2 {
+      font-family: 'Quicksand', sans-serif;
+      font-size: calc(12px + 1vw); }
 
 .row-content {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
