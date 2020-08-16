@@ -2,9 +2,11 @@ $color-black-transparent: rgba(0, 0, 0, 0.3);
 $color-lightblue-transparent: rgba(78, 165, 187, 0.3);
 $color-header-gradient: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(19, 97, 117, 0.73));
 $color-jumbotron-background: rgba(19, 97, 117, 0.73);
+$color-header-border: rgba(173, 216, 230, 0.52);
+
 
 body {
-    background-image: url('../img/bg-image.png');
+    background-image: url('../img/background-image.png');
 }
 
 .jumbotron {
@@ -21,6 +23,7 @@ header {
         position: relative;
         padding: 20px;
         margin-top: 50px;
+        margin-bottom: -10px;
         background-size: cover;
         background-image: $color-header-gradient, url('../img/header-image.jpg');
         color: white;
@@ -30,7 +33,7 @@ header {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         .headertext {
             position: absolute;         
-            top: 35%;              
+            top: 50%;              
             left: 50%;         
             transform: translate(-50%, -50%);
             h1 {
@@ -44,24 +47,60 @@ header {
             }
         }
     }
+    .header:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 10px;
+        bottom: 0px;
+        left: 10px;
+        right: 10px;
+        bottom: 0px;
+        border-radius: 20px 20px 0 0;
+        border: 1px dashed $color-header-border;
+        border-bottom: none;
+    }
 }
 
 .row-content {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    border-radius: 0 0 20px 20px;
     background-color: white;
-    margin-top: -10vh;
-    margin-bottom: -10vh;
+    margin-top: -10px;
 }
 
 .main {
     padding: 20px;
     background-color: white;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 0 20px 20px;
 }
 
+.main:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 0 0 20px 20px;
+    border: 1px dashed $color-header-border;
+    border-top: none;
+}
+
+// .navbar {
+//     padding: 10px;
+//     margin: 0;
+
+// }
+
 .navi {
-    padding: 5px;
     background-color: lightblue;
-    border-radius: 20px 0 0 20px;
+    margin-top: -8px;
+}
+
+.navbar-collapse {
+    padding: 10px;
+    margin: 0 auto;
 }
