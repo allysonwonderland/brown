@@ -23,14 +23,14 @@ header {
         position: relative;
         padding: 20px;
         margin-top: 50px;
-        margin-bottom: -10px;
+        margin-bottom: 0px;
         background-size: cover;
         background-image: $color-header-gradient, url('../img/header-image.jpg');
         color: white;
         min-height: 30vh;
         background-color: white;
         border-radius: 20px 20px 0 0;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: -6px -6px 6px -6px rgba(0, 0, 0,.2), 6px -6px 6px -6px rgba(0, 0, 0,.2);   
         .headertext {
             position: absolute;         
             top: 50%;              
@@ -63,7 +63,7 @@ header {
 }
 
 .row-content {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    box-shadow: 6px 6px 6px -6px rgba(0, 0, 0,.2),-6px 6px 6px -6px rgba(0, 0, 0,.2);   
     border-radius: 0 0 20px 20px;
     background-color: white;
     margin-top: -10px;
@@ -98,9 +98,23 @@ header {
 .navi {
     background-color: lightblue;
     margin-top: -8px;
+    padding: 0px;
+
 }
+
+// navbar {
+//     padding-top: -10px;
+// }
 
 .navbar-collapse {
     padding: 10px;
-    margin: 0 auto;
+    margin: 0;
 }
+
+// #mainNavbar {
+//     padding-bottom: 20px;
+// }
+
+// .navbar-toggler {
+//     padding-bottom: 10px;
+// }
