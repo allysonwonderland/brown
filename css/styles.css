@@ -11,7 +11,6 @@ header .header {
   align-items: center;
   position: relative;
   padding: 20px;
-  margin-top: 50px;
   margin-bottom: 0px;
   background-size: cover;
   background-image: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(19, 97, 117, 0.73)), url("../img/header-image.jpg");
@@ -51,8 +50,7 @@ header .header:after {
   box-shadow: 6px 6px 6px -6px rgba(0, 0, 0, 0.2), -6px 6px 6px -6px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 20px 20px;
   background-color: white;
-  z-index: 0;
-  margin-bottom: 50px; }
+  z-index: 0; }
 
 .main {
   padding: 20px;

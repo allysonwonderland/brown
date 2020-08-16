@@ -13,6 +13,13 @@ body {
     padding: 0;
     background-color: $color-jumbotron-background;
 }
+// .mt-5 {
+//     margin-top: ($spacer * 3) !important;
+// }
+
+// .mb-5 {
+//     margin-bottom: ($spacer * 3) !important;
+// }
 
 header {
     .header {
@@ -20,7 +27,6 @@ header {
         align-items: center;
         position: relative;
         padding: 20px;
-        margin-top: 50px;
         margin-bottom: 0px;
         background-size: cover;
         background-image: $color-header-gradient, url('../img/header-image.jpg');
@@ -65,10 +71,7 @@ header {
     box-shadow: 6px 6px 6px -6px $color-box-shadow,-6px 6px 6px -6px $color-box-shadow;   
     border-radius: 0 0 20px 20px;
     background-color: white;
-    z-index: 0;
-    margin-bottom: 50px;
-    // margin-bottom: -100px;
-    
+    z-index: 0;   
 }
 
 .main {
