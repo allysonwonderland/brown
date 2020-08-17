@@ -6,7 +6,7 @@ $(function () {
     $("#nav-placeholder").load("/brown/nav.html", function () {
         let pageLoc = window.location.pathname;
         let navLink = pageLoc.split("/");
-        let homeLink = navLink.shift();
+        let homeLink = navLink.pop();
         console.log(pageLoc);
         console.log(homeLink);
        
