@@ -7,6 +7,7 @@ $(function () {
         let pageLoc = window.location.pathname;
         let navLink = pageLoc.split("/");
         console.log(pageLoc);
+        console.log("test");
        
         if ((navLink == '') || (navLink == '/')) {
             $('.home').addClass("active");
