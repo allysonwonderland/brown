@@ -80,6 +80,9 @@ header .header:after {
   top: -1px;
   z-index: 1; }
 
+.dropdown-menu {
+  background-color: #d7e9f0; }
+
 footer {
   background-color: lightblue; }
   footer .footer {

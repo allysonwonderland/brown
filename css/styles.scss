@@ -2,7 +2,7 @@ $color-header-gradient: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(
 $color-jumbotron-background: rgba(19, 97, 117, 0.73);
 $color-header-border: rgba(173, 216, 230, 0.52);
 $color-box-shadow: rgba(0, 0, 0,.2);
-
+$color-menu: rgb(215, 233, 240);
 
 body {
     background-image: url('../img/background-image.png');
@@ -119,6 +119,10 @@ header {
 //     border-bottom: none;
 //     z-index: -1;
 // }
+
+.dropdown-menu {
+    background-color: $color-menu;
+}
 
 footer {
     background-color: lightblue;
