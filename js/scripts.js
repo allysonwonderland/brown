@@ -13,7 +13,7 @@ $(function () {
             $('.home').attr('href', '#');
         }
         else {
-            let navShift = navLink.slice(1,2);
+            let navShift = navLink.slice(2,3);
             console.log(navShift);
 
             $('a[href="' + pageLoc + '"]').addClass("active");
