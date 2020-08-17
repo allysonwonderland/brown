@@ -1,7 +1,7 @@
 $(function () {
-    $("#header-placeholder").load("/header.html");
+    $("#header-placeholder").load("../header.html");
 
-    $("#nav-placeholder").load("/nav.html", function () {
+    $("#nav-placeholder").load("../nav.html", function () {
         let pageLoc = window.location.pathname;
         let navLink = pageLoc.split('/');
         console.log(pageLoc);
@@ -21,7 +21,7 @@ $(function () {
         }
     });
 
-    $("#footer-placeholder").load("/footer.html", function () {
+    $("#footer-placeholder").load("../footer.html", function () {
         let year = new Date();
         $("#year").text(year.getFullYear());
     });
