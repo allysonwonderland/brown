@@ -119,8 +119,8 @@ header {
 //     border-bottom: none;
 //     z-index: -1;
 // }
-.nav-link a:hover {
-    color:red;
+.bg-primary {
+    background-color: lightblue;
 }
 
 .dropdown-menu {
@@ -132,6 +132,7 @@ footer {
     .footer {
         // z-index: -1;
         padding: 20px;
+        padding-top: 10px;
         border-radius: 0 0 20px 20px;
         z-index: 0;   
         background-color: lightblue;

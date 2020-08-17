@@ -80,8 +80,8 @@ header .header:after {
   top: -1px;
   z-index: 1; }
 
-.nav-link a:hover {
-  color: red; }
+.bg-primary {
+  background-color: lightblue; }
 
 .dropdown-menu {
   background-color: #d7e9f0; }
@@ -90,6 +90,7 @@ footer {
   background-color: lightblue; }
   footer .footer {
     padding: 20px;
+    padding-top: 10px;
     border-radius: 0 0 20px 20px;
     z-index: 0;
     background-color: lightblue; }
