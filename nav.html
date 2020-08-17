@@ -1,51 +1,109 @@
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
-        <!-- <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i>
-                        Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-map-signs"></i>
-                            Maps</a>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-book"></i>
-                            Records</a>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Records List</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Church Records</a>
-                      <a class="dropdown-item" href="#">Court Records</a>
-                      <a class="dropdown-item" href="#">Land Records</a>
-                      <a class="dropdown-item" href="#">Probate Records</a>
-                      <a class="dropdown-item" href="#">Tax Records</a>
-                      
-                    </div>
-                  </li>
-                <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-tombstone"></i> Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-        <!-- build:js js/main.js -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    
-        <script src="js/scripts.js"></script>
-        <!-- endbuild -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  <!-- <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-lg-center" id="nav">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i>
+          Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-map"></i>
+          Geography</a>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <!-- <a class="dropdown-item" href="geography.html">Geography List</a>
+          <div class="dropdown-divider"></div> -->
+          <a class="dropdown-item" href="#">Maps</a>
+          <a class="dropdown-item" href="#">Townships</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-atlas"></i>
+          Immigration</a>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <!-- <a class="dropdown-item" href="geography.html">Geography List</a>
+          <div class="dropdown-divider"></div> -->
+          <a class="dropdown-item" href="#">Emigration Records</a>
+          <a class="dropdown-item" href="#">Naturalization</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-school"></i>
+          Institutions</a>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <!-- <a class="dropdown-item" href="geography.html">Geography List</a>
+          <div class="dropdown-divider"></div> -->
+          <a class="dropdown-item" href="#">Correctional</a>
+          <a class="dropdown-item" href="#">Orphanages</a>
+          <a class="dropdown-item" href="#">Poorhouses</a>
+          <a class="dropdown-item" href="#">Schools</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-newspaper"></i>
+          Published</a>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <!-- <a class="dropdown-item" href="geography.html">Geography List</a>
+          <div class="dropdown-divider"></div> -->
+          <a class="dropdown-item" href="#">Genealogies and Family</a>
+          <a class="dropdown-item" href="#">Local and County Histories</a>
+          <a class="dropdown-item" href="#">PERSI</a>
+          <a class="dropdown-item" href="#">Newspapers</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-book"></i>
+          Records</a>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="records.html">Records List</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Cemetery</a>
+          <a class="dropdown-item" href="#">Census</a>
+          <a class="dropdown-item" href="#">Church</a>
+          <a class="dropdown-item" href="#">Court</a>
+          <a class="dropdown-item" href="#">Land</a>
+          <a class="dropdown-item" href="#">Military</a>
+          <a class="dropdown-item" href="#">School</a>
+          <a class="dropdown-item" href="#">Vital</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user"></i>
+          Residency</a>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <!-- <a class="dropdown-item" href="geography.html">Geography List</a>
+          <div class="dropdown-divider"></div> -->
+          <a class="dropdown-item" href="#">Censuses</a>
+          <a class="dropdown-item" href="#">Taxation</a>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+

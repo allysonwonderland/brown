@@ -80,6 +80,9 @@ header .header:after {
   top: -1px;
   z-index: 1; }
 
+.nav-link a:hover {
+  color: red; }
+
 .dropdown-menu {
   background-color: #d7e9f0; }
 

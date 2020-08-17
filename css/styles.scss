@@ -119,6 +119,9 @@ header {
 //     border-bottom: none;
 //     z-index: -1;
 // }
+.nav-link a:hover {
+    color:red;
+}
 
 .dropdown-menu {
     background-color: $color-menu;
