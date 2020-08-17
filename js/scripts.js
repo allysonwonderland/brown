@@ -6,10 +6,11 @@ $(function () {
     $("#nav-placeholder").load("/brown/nav.html", function () {
         let pageLoc = window.location.pathname;
         let navLink = pageLoc.split("/");
+        let homeLink = navLink.shift();
         console.log(pageLoc);
-        console.log("test");
+        console.log(homeLink);
        
-        if ((navLink == '') || (navLink == '/')) {
+        if ((homeLink == '') || (homeLink == '/')) {
             $('.home').addClass("active");
             $('.home').attr('href', '#');
         }
