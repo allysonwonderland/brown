@@ -8,7 +8,7 @@ $(function () {
         let navLink = pageLoc.split("/");
         console.log(pageLoc);
        
-        if ((pageLoc == '') || (pageLoc == '/')) {
+        if ((navLink == '') || (navLink == '/')) {
             $('.home').addClass("active");
             $('.home').attr('href', '#');
         }
