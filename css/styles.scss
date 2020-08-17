@@ -5,7 +5,7 @@ $color-box-shadow: rgba(0, 0, 0,.2);
 $color-menu: rgb(215, 233, 240);
 
 body {
-    background-image: url('../img/background-image.png');
+    background-image: url('/brown/img/background-image.png');
 }
 
 .jumbotron {
@@ -29,7 +29,7 @@ header {
         padding: 20px;
         margin-bottom: 0px;
         background-size: cover;
-        background-image: $color-header-gradient, url('../img/header-image.jpg');
+        background-image: $color-header-gradient, url('/brown/img/header-image.jpg');
         color: white;
         min-height: 30vh;
         background-color: white;

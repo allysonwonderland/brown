@@ -1,5 +1,5 @@
 body {
-  background-image: url("../img/background-image.png"); }
+  background-image: url("/brown/img/background-image.png"); }
 
 .jumbotron {
   margin: 0;
@@ -13,7 +13,7 @@ header .header {
   padding: 20px;
   margin-bottom: 0px;
   background-size: cover;
-  background-image: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(19, 97, 117, 0.73)), url("../img/header-image.jpg");
+  background-image: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(19, 97, 117, 0.73)), url("/brown/img/header-image.jpg");
   color: white;
   min-height: 30vh;
   background-color: white;
