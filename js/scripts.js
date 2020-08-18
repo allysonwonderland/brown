@@ -7,6 +7,7 @@ $(function () {
         let pageLoc = window.location.pathname;
         let navLink = pageLoc.split("/");
         let navPop = navLink.pop();
+        navPop = navLink.pop();
 
         $('a[href$="' + pageLoc + '"]').addClass("active");
         $('a[href$="' + pageLoc + '"]').attr('href', '#');
