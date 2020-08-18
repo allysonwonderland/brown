@@ -18,7 +18,7 @@ header .header {
   padding: 20px;
   margin-bottom: 0px;
   background-size: cover;
-  background-image: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(19, 97, 117, 0.73)), url("/brown/img/header-image.jpg");
+  background-image: linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(19, 97, 117, 0.73)), url("/brown/img/header-image-min.jpg");
   color: white;
   min-height: 30vh;
   background-color: white;
