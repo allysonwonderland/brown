@@ -16,11 +16,6 @@ $(function () {
         $('a[href$="' + pageLoc + '"]').addClass("active");
         $('a[href$="' + pageLoc + '"]').attr('href', '#');
         $('[class$="' + navPop + '"]').addClass("active");
-
-
-
-        console.log(navLink.length);
-
     });
 
     $("#footer-placeholder").load("/brown/footer.html", function () {
