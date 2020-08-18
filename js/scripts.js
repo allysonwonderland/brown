@@ -15,12 +15,13 @@ $(function () {
             $('.home').attr('href', '#');
         }
         else {
-            let navShift = navLink.slice(2,3);
-            console.log(navShift);
+            let navPop = navLink.pop();
+            console.log(navPop);
 
-            $('a[href="' + pageLoc + '"]').addClass("active");
-            $('a[href="' + pageLoc + '"]').attr('href', '#');
-            $('[class$="' + navShift + '"]').addClass("active");
+            $('a[href$="' + homeLink + '"]').addClass("active");
+            $('a[href$="' + homeLink + '"]').attr('href', '#');
+            $('[class$="' + navPop + '"]').addClass("active");
+            console.log(homeLink);
         }
     });
 
