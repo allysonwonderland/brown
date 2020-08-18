@@ -11,8 +11,8 @@ $(function () {
         console.log(homeLink);
        
         if ((homeLink == '') || (homeLink == '/')) {
-            $('a[href$="' + homeLink + '"]').addClass("active");
-            $('a[href$="' + homeLink + '"]').attr('href', '#');
+            $('a[href$="' + navLink + '"]').addClass("active");
+            $('a[href$="' + navLink + '"]').attr('href', '#');
             
             // $('.home').addClass("active");
             // $('.home').attr('href', '#');
