@@ -5,13 +5,13 @@ $(function () {
 
     $("#nav-placeholder").load("/brown/nav.html", function () {
         let pageLoc = window.location.pathname;
-        console.log("Page location: " + pageLoc);
+            console.log("Page location: " + pageLoc);
         let navLink = pageLoc.split("/");
-        console.log(navLink);
+            console.log("Page array: " + navLink);
         let navPop = navLink.pop();
-        console.log(navPop);
+            console.log("First popped item: " + navPop);
         navPop = navLink.pop();
-        console.log(navPop);      
+            console.log("Final popped item: " + navPop);      
 
         $('a[href$="' + pageLoc + '"]').addClass("active");
         $('a[href$="' + pageLoc + '"]').attr('href', '#');
