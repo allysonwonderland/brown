@@ -111,3 +111,6 @@ footer {
     border: 1px dashed white;
     border-top: none;
     z-index: -1; }
+
+#top {
+  display: none; }

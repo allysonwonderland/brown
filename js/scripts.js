@@ -26,5 +26,13 @@ $(function () {
         $("#footer-placeholder").load("/brown/footer.html", function () {
             $("#year").text(year.getFullYear());
         });
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop()) {
+                $('#top:hidden').stop(true, true).fadeIn();
+            } else {
+                $('#top').stop(true, true).fadeOut();
+            }
+        });
     });
 });
