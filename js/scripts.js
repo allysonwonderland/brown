@@ -1,6 +1,5 @@
 $(function () {
     $.when(
-        $.getScript('https://code.jquery.com/jquery-3.5.1.min.js'),
         $.getScript('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'),
         $.getScript('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'),
         $.getScript('https://kit.fontawesome.com/1c11d0daec.js')
