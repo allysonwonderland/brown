@@ -13,10 +13,11 @@ $(function () {
         $('a[href$="' + pageLoc + '"]').attr('href', '#');
         $('[class$="' + navPop + '"]').addClass("active");
 
-        console.log(pageLoc);
-        console.log(navLink);
-        console.log(homeLink);   
-        console.log(navPop);      
+        console.log("Page location: " + pageLoc);
+        console.log("Page array: " + navLink);
+        console.log("Popped last item off array: " + homeLink); 
+        console.log("Page array: " + navLink);
+        console.log("Popped last item off array: " + navPop);      
     });
 
     $("#footer-placeholder").load("/brown/footer.html", function () {
