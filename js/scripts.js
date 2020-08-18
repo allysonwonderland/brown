@@ -10,10 +10,10 @@ $(function () {
         console.log(pageLoc);
         console.log(homeLink);
        
-        if ((homeLink.pop() == '') || (homeLink.pop() == '/')) {
+        if ((homeLink == '') || (homeLink == '/')) {
             $('a[href$="' + homeLink + '"]').addClass("active");
             $('a[href$="' + homeLink + '"]').attr('href', '#');
-            console.log(homeLink.pop());
+            
             // $('.home').addClass("active");
             // $('.home').attr('href', '#');
         }
