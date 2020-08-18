@@ -18,7 +18,8 @@ $(function () {
         console.log("Page array length: " + navLink.length);
         // console.log("Popped last item off array: " + homeLink); 
         console.log("Page array: " + navLink);
-        console.log("Popped last item off array: " + navPop);      
+        console.log("Popped last item off array 1: " + navPop); 
+        console.log("Popped last item off array 2: " + navPop);      
     });
 
     $("#footer-placeholder").load("/brown/footer.html", function () {
