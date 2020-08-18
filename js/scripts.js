@@ -14,10 +14,9 @@ $(function () {
         $('[class$="' + navPop + '"]').addClass("active");
 
         console.log(pageLoc);
-        console.log(navLink;)
+        console.log(navLink);
         console.log(homeLink);   
-        console.log(navPop);
-      
+        console.log(navPop);      
     });
 
     $("#footer-placeholder").load("/brown/footer.html", function () {
