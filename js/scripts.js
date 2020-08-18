@@ -15,7 +15,7 @@ $(function () {
 
         console.log("Page location: " + pageLoc);
         console.log("Page array: " + navLink);
-        console.log("Page array length: + navLink.length);
+        console.log("Page array length: " + navLink.length);
         console.log("Popped last item off array: " + homeLink); 
         console.log("Page array: " + navLink);
         console.log("Popped last item off array: " + navPop);      
