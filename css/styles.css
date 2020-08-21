@@ -62,9 +62,11 @@ header .header:after {
   z-index: 0; }
 
 .main {
-  padding: 20px;
+  padding: 20px 30px;
   border-radius: 0 0 20px 20px;
-  z-index: 0; }
+  z-index: 0;
+  color: black;
+  text-align: justify; }
   .main a:link, .main a:visited {
     color: #136175;
     text-decoration: none; }
