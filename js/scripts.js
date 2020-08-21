@@ -48,7 +48,7 @@ $(function () {
 
         if ($("ol").has("#breadcrumb")) {
             console.log(pageLoc);
-            if (!(pagePop.trim())) {
+            if (!(pagePop.trim()) || pagePop.has('index')) {
                 console.log("parent test");
                 $("#breadcrumb").html('<li class="breadcrumb-item"><a href="/brown/index.html">Home</a></li><li class="breadcrumb-item active">' + breadcrumbNav + '</li>');
             }     
