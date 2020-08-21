@@ -44,7 +44,8 @@ $(function () {
         let breadcrumbPagePop = pagePop.replace('.html', '');
         breadcrumbPagePop = breadcrumbPagePop.substr(0, 1).toUpperCase() + breadcrumbPagePop.substr(1);
         let breadcrumbNav = navPop.substr(0, 1).toUpperCase() + navPop.substr(1);
-        console.log(pagePop)
+        console.log(pagePop);
+
         if ($("ol").has("#breadcrumb")) {
             console.log(pageLoc);
             if ($(pagePop).has('.html') !== -1) {
@@ -52,8 +53,7 @@ $(function () {
             }
             else {
                 $("#breadcrumb").html('<li class="breadcrumb-item"><a href="/brown/index.html">Home</a></li><li class="breadcrumb-item active">' + breadcrumbNav + '</li>');
-            }
-            
+            }            
         }
     });
 
