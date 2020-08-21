@@ -1,4 +1,16 @@
+$theme-colors: (
+  "primary": red,
+  "danger": #ff4136
+) !default;
+$colors: (
+    "blue": red
+) !default;
+
+$blue: red;
+$primary: red;
+
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css');
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
@@ -9,9 +21,15 @@ $color-jumbotron-background: rgba(19, 97, 117, 0.73);
 $color-header-border: rgba(173, 216, 230, 0.52);
 $color-box-shadow: rgba(0, 0, 0,.2);
 $color-menu: rgb(215, 233, 240);
+$color-menu-active: rgba(19, 97, 117, 0.63);
+
 
 body {
     background-image: url('/brown/img/background-image.png');
+}
+
+.bg-menu-active {
+    background-color: $color-menu-active !important;
 }
 
 .jumbotron {
@@ -105,6 +123,32 @@ header {
     z-index: 1;
 }
 
+.dropdown-menu {
+    background-color: $color-menu;
+
+    a:hover {
+        background-color: lightblue;
+    }
+    // a:active {
+    //     background-color: red;
+    // }
+    // a:selected {
+    //     background-color: yellow;
+    // }
+}
+
+.dropdown-item a:active, a:selected {
+    background-color: red;
+}
+
+.dropdown {
+    background-color: lightblue;
+
+}
+.nav-link a:hover {
+    background-color: $color-menu;
+}
+
 // .navi:after {
 //     content: '';
 //     display: block;
@@ -118,13 +162,6 @@ header {
 //     border-bottom: none;
 //     z-index: -1;
 // }
-.bg-primary {
-    background-color: lightblue;
-}
-
-.dropdown-menu {
-    background-color: $color-menu;
-}
 
 footer {
     background-color: lightblue;

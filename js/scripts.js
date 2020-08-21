@@ -2,7 +2,7 @@ $(function () {
     $.when(
         $.getScript('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'),
         $.getScript('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'),
-        $.getScript('https://kit.fontawesome.com/1c11d0daec.js')
+        $.getScript('https://kit.fontawesome.com/1c11d0daec.js'),
     ).done(function () {
         let year = new Date();
 
@@ -18,7 +18,7 @@ $(function () {
             navPop = navLink.pop();
             console.log("Final popped item: " + navPop);
 
-            $('a[href$="' + pageLoc + '"]').addClass("active");
+            $('a[href$="' + pageLoc + '"]').addClass("active bg-menu-active");
             $('a[href$="' + pageLoc + '"]').attr('href', '#');
             $('[class$="' + navPop + '"]').addClass("active");
         });

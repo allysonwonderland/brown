@@ -1,10 +1,14 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 body {
   background-image: url("/brown/img/background-image.png"); }
+
+.bg-menu-active {
+  background-color: rgba(19, 97, 117, 0.63) !important; }
 
 .jumbotron {
   margin: 0;
@@ -85,10 +89,18 @@ header .header:after {
   top: -1px;
   z-index: 1; }
 
-.bg-primary {
+.dropdown-menu {
+  background-color: #d7e9f0; }
+  .dropdown-menu a:hover {
+    background-color: lightblue; }
+
+.dropdown-item a:active, a:selected {
+  background-color: red; }
+
+.dropdown {
   background-color: lightblue; }
 
-.dropdown-menu {
+.nav-link a:hover {
   background-color: #d7e9f0; }
 
 footer {
