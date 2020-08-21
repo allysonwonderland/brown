@@ -38,8 +38,8 @@ $(function () {
             }
         });
 
-        let breadcrumbPagePop = pagePop.replace('.html', '');
-        breadcrumbPagePop = breadcrumbPagePop.substr(0, 1).toUpperCase() + breadcrumbPagePop.substr(1);
+        let breadcrumbPage = pagePop.replace('.html', '');
+        breadcrumbPage = breadcrumbPage.substr(0, 1).toUpperCase() + breadcrumbPage.substr(1);
         let breadcrumbNav = navPop.substr(0, 1).toUpperCase() + navPop.substr(1);
 
         if ($("ol").has("#breadcrumb")) {
@@ -51,7 +51,7 @@ $(function () {
             else {
                 // ($(pagePop).has('.html') !== -1) {
                 console.log("child test");
-                $("#breadcrumb").html('<li class="breadcrumb-item"><a href="/brown/index.html">Home</a></li><li class="breadcrumb-item"><a href="./">' + breadcrumbNav + '</a></li><li class="breadcrumb-item active">' + breadcrumbPagePop + '</li>');
+                $("#breadcrumb").html('<li class="breadcrumb-item"><a href="/brown/index.html">Home</a></li><li class="breadcrumb-item"><a href="index.html">' + breadcrumbNav + '</a></li><li class="breadcrumb-item active">' + breadcrumbPage + '</li>');
             }
         }
     });
