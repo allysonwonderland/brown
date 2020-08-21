@@ -44,7 +44,7 @@ $(function () {
         let breadcrumbPagePop = pagePop.replace('.html', '');
         breadcrumbPagePop = breadcrumbPagePop.substr(0, 1).toUpperCase() + breadcrumbPagePop.substr(1);
         let breadcrumbNav = navPop.substr(0, 1).toUpperCase() + navPop.substr(1);
-
+        console.log(pagePop)
         if ($("ol").has("#breadcrumb")) {
             console.log(pageLoc);
             if ($(pagePop).has(".html")) {
