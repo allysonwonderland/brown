@@ -90,8 +90,10 @@ header .header:after {
   .highlight a {
     float: right; }
 
-.row-highlight {
-  margin: 0; }
+.list-map {
+  background-color: rgba(215, 233, 240, 0.465);
+  padding: 10px;
+  margin-bottom: 10px; }
 
 h3, h4 {
   text-align: center; }

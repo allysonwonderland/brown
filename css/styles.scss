@@ -21,6 +21,7 @@ $color-jumbotron-background: rgba(19, 97, 117, 0.73);
 $color-header-border: rgba(173, 216, 230, 0.52);
 $color-box-shadow: rgba(0, 0, 0,.2);
 $color-menu: rgb(215, 233, 240);
+$color-menu-transparent: rgba(215, 233, 240, 0.465);
 $color-menu-active: rgba(19, 97, 117, 0.63);
 $color-body-link: rgb(19, 97, 117);
 $color-body-active: black;
@@ -130,8 +131,11 @@ header {
         float: right;
     }
 }
-.row-highlight {
-    margin: 0;
+
+.list-map {
+    background-color: $color-menu-transparent;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 h3, h4 {
