@@ -3,6 +3,7 @@ $(function () {
         $.getScript('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'),
         $.getScript('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'),
         $.getScript('https://kit.fontawesome.com/1c11d0daec.js'),
+        $.getScript('https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js'),
     ).done(function () {
         let year = new Date();
 
@@ -53,6 +54,6 @@ $(function () {
                 console.log("child test");
                 $("#breadcrumb").html('<li class="breadcrumb-item"><a href="/brown/index.html">Home</a></li><li class="breadcrumb-item"><a href="index.html">' + breadcrumbNav + '</a></li><li class="breadcrumb-item active">' + breadcrumbPage + '</li>');
             }
-        }
+        }        
     });
 });

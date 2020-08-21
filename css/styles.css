@@ -69,11 +69,32 @@ header .header:after {
   color: black;
   text-align: left; }
   .main a:link, .main a:visited {
-    color: #136175;
+    color: #136175 !important;
     text-decoration: none; }
   .main a:hover, .main a:active {
-    color: black;
+    color: black !important;
     text-decoration: none; }
+
+.highlight {
+  padding: 10px;
+  margin: 0; }
+  .highlight :hover {
+    background-color: #d7e9f0; }
+  .highlight ul {
+    padding: 10px; }
+  .highlight .li-highlight {
+    background-color: #d7e9f0;
+    padding: 5px; }
+  .highlight li {
+    padding: 5px; }
+  .highlight a {
+    float: right; }
+
+.row-highlight {
+  margin: 0; }
+
+h3, h4 {
+  text-align: center; }
 
 .center-image {
   margin: 20px 0;

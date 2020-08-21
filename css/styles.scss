@@ -101,13 +101,41 @@ header {
     color: black;
     text-align: left;
     a:link, a:visited {
-        color: $color-body-link;
+        color: $color-body-link !important;
         text-decoration: none;
     }
     a:hover, a:active {
-        color: $color-body-active;
+        color: $color-body-active !important;
         text-decoration: none;
     }
+}
+
+.highlight {
+    padding: 10px;
+    margin: 0;
+        :hover {
+        background-color: $color-menu;
+    }
+    ul {
+        padding: 10px;
+    }
+    .li-highlight {
+        background-color: $color-menu;
+        padding: 5px;
+    }
+    li {
+        padding: 5px;
+    }
+    a {
+        float: right;
+    }
+}
+.row-highlight {
+    margin: 0;
+}
+
+h3, h4 {
+    text-align: center;
 }
 
 .center-image {
