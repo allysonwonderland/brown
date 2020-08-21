@@ -47,7 +47,7 @@ $(function () {
         console.log(pagePop)
         if ($("ol").has("#breadcrumb")) {
             console.log(pageLoc);
-            if ($(pagePop).has(".html")) {
+            if ($(pagePop).has('.html') !== -1) {
                 $("#breadcrumb").html('<li class="breadcrumb-item"><a href="/brown/index.html">Home</a></li><li class="breadcrumb-item"><a href="./">' + breadcrumbNav + '</a></li><li class="breadcrumb-item active">' + breadcrumbPagePop + '</li>');
             }
             else {
