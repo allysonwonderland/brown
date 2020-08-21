@@ -48,14 +48,16 @@ $(function () {
 
         if ($("ol").has("#breadcrumb")) {
             console.log(pageLoc);
-            if ($(pagePop).has('.html') !== -1) {
-                console.log("if test");
+            if (!a.trim()) {
+                console.log("parent test");
+                $("#breadcrumb").html('<li class="breadcrumb-item"><a href="/brown/index.html">Home</a></li><li class="breadcrumb-item active">' + breadcrumbNav + '</li>');
+            }     
+            else  {
+            // ($(pagePop).has('.html') !== -1) {
+                console.log("child test");
                 $("#breadcrumb").html('<li class="breadcrumb-item"><a href="/brown/index.html">Home</a></li><li class="breadcrumb-item"><a href="./">' + breadcrumbNav + '</a></li><li class="breadcrumb-item active">' + breadcrumbPagePop + '</li>');
             }
-            else {
-                console.log("else test");
-                $("#breadcrumb").html('<li class="breadcrumb-item"><a href="/brown/index.html">Home</a></li><li class="breadcrumb-item active">' + breadcrumbNav + '</li>');
-            }            
+       
         }
     });
 
