@@ -172,6 +172,8 @@ footer {
         border-radius: 0 0 20px 20px;
         z-index: 0;   
         background-color: lightblue;
+        font-size: calc(12px + .2vw);
+        color: black;
     }
     .footer:after {
         content: '';

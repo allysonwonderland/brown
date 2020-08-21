@@ -115,7 +115,9 @@ footer {
     padding-top: 10px;
     border-radius: 0 0 20px 20px;
     z-index: 0;
-    background-color: lightblue; }
+    background-color: lightblue;
+    font-size: calc(12px + .2vw);
+    color: black; }
   footer .footer:after {
     content: '';
     display: block;
