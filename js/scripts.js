@@ -15,12 +15,18 @@ $(function () {
             console.log("Page array: " + navLink);
             let navPop = navLink.pop();
             console.log("First popped item: " + navPop);
-            navPop = navLink.pop();
+            navPop = navLink.pop();            
             console.log("Final popped item: " + navPop);
 
-            $('a[href$="' + pageLoc + '"]').addClass("active bg-menu-active");
-            $('a[href$="' + pageLoc + '"]').attr('href', '#');
-            $('[class$="' + navPop + '"]').addClass("active");
+            let pageLink = ('a[href$="' + pageLoc + '"]');
+            let pageNav = ('[class$="' + navPop + '"]');
+
+            if($(pageLink).hasClass("dropdown-item")) {
+                $(pageLink).addClass("active bg-menu-active");
+            }
+
+            $(pageLink).attr('href', '#');
+            $(pageNav).addClass("active");
         });
 
         $("#footer-placeholder").load("/brown/footer.html", function () {

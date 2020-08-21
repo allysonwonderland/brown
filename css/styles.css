@@ -94,9 +94,6 @@ header .header:after {
   .dropdown-menu a:hover {
     background-color: lightblue; }
 
-.dropdown-item a:active, a:selected {
-  background-color: red; }
-
 .dropdown {
   background-color: lightblue; }
 
