@@ -40,6 +40,7 @@ $(function () {
         });
 
         let breadcrumbPage = pagePop.replace('.html', '');
+        breadcrumbPage = breadcrumbPage.replace('-', '');
         breadcrumbPage = breadcrumbPage.substr(0, 1).toUpperCase() + breadcrumbPage.substr(1);
         let breadcrumbNav = navPop.substr(0, 1).toUpperCase() + navPop.substr(1);
 
