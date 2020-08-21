@@ -22,6 +22,8 @@ $color-header-border: rgba(173, 216, 230, 0.52);
 $color-box-shadow: rgba(0, 0, 0,.2);
 $color-menu: rgb(215, 233, 240);
 $color-menu-active: rgba(19, 97, 117, 0.63);
+$color-body-link: rgb(19, 97, 117);
+$color-body-active: black;
 
 
 body {
@@ -95,6 +97,14 @@ header {
     padding: 20px;
     border-radius: 0 0 20px 20px;
     z-index: 0;
+    a:link, a:visited {
+        color: $color-body-link;
+        text-decoration: none;
+    }
+    a:hover, a:active {
+        color: $color-body-active;
+        text-decoration: none;
+    }
 }
 
 .main:after {
@@ -133,7 +143,6 @@ header {
 
 .dropdown {
     background-color: lightblue;
-
 }
 .nav-link a:hover {
     background-color: $color-menu;
