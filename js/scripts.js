@@ -39,22 +39,35 @@ $(function () {
             }
         });
 
-        let breadcrumbPage = pagePop.replace('.html', '');
-        breadcrumbPage = breadcrumbPage.replace('-', '');
-        breadcrumbPage = breadcrumbPage.substr(0, 1).toUpperCase() + breadcrumbPage.substr(1);
+        let breadcrumbPagePop = pagePop.replace('.html', '');
+
+        if (breadcrumbPagePop.indexOf("-") >= 0) {
+            if (breadcrumbPagePop.indexOf("usgenweb") >= 0) {
+                breadcrumbPagePop = breadcrumbPagePop.split('-');
+                breadcrumbPagePop = breadcrumbPagePop[0].substr(0, 3).toUpperCase() +  breadcrumbPagePop[0].substr(3,2) + breadcrumbPagePop[0].substr(5,1).toUpperCase() + breadcrumbPagePop[0].substr(6) + " " + breadcrumbPagePop[1].substr(0, 1).toUpperCase() + breadcrumbPagePop[1].substr(1);
+            }
+            else {
+                breadcrumbPagePop = breadcrumbPagePop.split('-');
+                breadcrumbPagePop = breadcrumbPagePop[0].substr(0, 1).toUpperCase() + breadcrumbPagePop[0].substr(1) + " " + breadcrumbPagePop[1].substr(0, 1).toUpperCase() + breadcrumbPagePop[1].substr(1);
+            }
+        }
+        else {
+            breadcrumbPagePop = breadcrumbPagePop.substr(0, 1).toUpperCase() + breadcrumbPagePop.substr(1);
+        }
+        
         let breadcrumbNav = navPop.substr(0, 1).toUpperCase() + navPop.substr(1);
 
         if ($("ol").has("#breadcrumb")) {
             console.log(pageLoc);
-            if (!(pagePop.trim()) || (pagePop.indexOf("index") >= 0) ) {
+            if (!(pagePop.trim()) || (pagePop.indexOf("index") >= 0)) {
                 console.log("parent test");
                 $("#breadcrumb").html('<li class="breadcrumb-item"><a href="/brown/index.html">Home</a></li><li class="breadcrumb-item active">' + breadcrumbNav + '</li>');
             }
             else {
                 // ($(pagePop).has('.html') !== -1) {
                 console.log("child test");
-                $("#breadcrumb").html('<li class="breadcrumb-item"><a href="/brown/index.html">Home</a></li><li class="breadcrumb-item"><a href="index.html">' + breadcrumbNav + '</a></li><li class="breadcrumb-item active">' + breadcrumbPage + '</li>');
+                $("#breadcrumb").html('<li class="breadcrumb-item"><a href="/brown/index.html">Home</a></li><li class="breadcrumb-item"><a href="index.html">' + breadcrumbNav + '</a></li><li class="breadcrumb-item active">' + breadcrumbPagePop + '</li>');
             }
-        }        
+        }
     });
 });
