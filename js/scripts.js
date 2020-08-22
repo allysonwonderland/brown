@@ -27,6 +27,17 @@ $(function () {
             breadcrumbPage = $(pageLink).text();
         }
 
+        if ($("ol").has("#breadcrumb")) {
+            console.log(pageLoc);
+            if (!(pagePop.trim()) || (pagePop.indexOf("index") >= 0)) {
+                console.log("parent test");
+                $("#breadcrumb").html('<li class="breadcrumb-item"><a href="/brown/index.html">Home</a></li><li class="breadcrumb-item active">' + breadcrumbNav + '</li>');
+            } else {
+                console.log("child test");
+                $("#breadcrumb").html('<li class="breadcrumb-item"><a href="/brown/index.html">Home</a></li><li class="breadcrumb-item"><a href="index.html">' + breadcrumbNav + '</a></li><li class="breadcrumb-item active">' + breadcrumbPage + '</li>');
+            }
+        }   
+
         $(pageLink).attr('href', '#');
         $(pageNav).addClass("active");    
 
