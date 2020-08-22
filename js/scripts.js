@@ -24,9 +24,12 @@ $(function () {
         if ($(pageLink).hasClass("dropdown-item")) {
             $(pageLink).addClass("active bg-menu-active");
             console.log($(pageLink).text());
-            breadcrumbPage = $(pageLink).text();
+            breadcrumbPage = $(pageLink).text();        
+            $("#page-title").html('<h3>' + breadcrumbPage + '</h3>');    
+        } else {
+            $("#page-title").html('<h3>' + breadcrumbNav + '</h3>'); 
         }
-
+        
         if ($("ol").has("#breadcrumb")) {
             console.log(pageLoc);
             if (!(pagePop.trim()) || (pagePop.indexOf("index") >= 0)) {
@@ -41,17 +44,7 @@ $(function () {
         $(pageLink).attr('href', '#');
         $(pageNav).addClass("active");    
 
-        if ($("ol").has("#breadcrumb")) {
-            console.log(pageLoc);
-            if (!(pagePop.trim()) || (pagePop.indexOf("index") >= 0)) {
-                console.log("parent test");
-                $("#breadcrumb").html('<li class="breadcrumb-item"><a href="/brown/index.html">Home</a></li><li class="breadcrumb-item active">' + breadcrumbNav + '</li>');
-            } else {
-                console.log("child test");
-                $("#breadcrumb").html('<li class="breadcrumb-item"><a href="/brown/index.html">Home</a></li><li class="breadcrumb-item"><a href="index.html">' + breadcrumbNav + '</a></li><li class="breadcrumb-item active">' + breadcrumbPage + '</li>');
-            }
-        }   
-        
+
         $(window).scroll(function () {
             if ($(this).scrollTop()) {
                 $('#top:hidden').stop(true, true).fadeIn();
